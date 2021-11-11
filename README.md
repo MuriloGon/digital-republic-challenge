@@ -34,9 +34,11 @@ docker-compose up --build
 docker-compose down
 ```
 
+> o frontend é iniciado em `http://localhost:3000` e o backend em `http://localhost:3030`
+
 ## Iniciar backend e/ou frontend
 
-Para cada frente o read mostra como iniciar:
+Para cada frente o readme mostra como iniciar/testar a aplicação:
 
 - https://github.com/MuriloGon/dr-backend
 - https://github.com/MuriloGon/dr-frontend
