@@ -1,4 +1,4 @@
-# Documento de requisitos
+# Code Challenge Digital Republic
 
 ## Propósito
 
@@ -11,6 +11,10 @@ O projeto é composto é separado por duas aplicações (Backend e Frontend).
 ## Iniciar a aplicação
 
 ### Requisitos (aplicação inteira)
+
+
+https://user-images.githubusercontent.com/45644220/141282923-fb9b7f02-5c90-4961-a26b-d56a553603c8.mp4
+
 
 - docker
 - docker-compose
@@ -25,6 +29,9 @@ O projeto é composto é separado por duas aplicações (Backend e Frontend).
 ```bash
 git submodule update --init --recursive
 docker-compose up --build
+
+#para parar e deletar conteiners e imagens criados
+docker-compose down
 ```
 
 ## Iniciar backend e/ou frontend
@@ -33,6 +40,10 @@ Para cada frente o read mostra como iniciar:
 
 - https://github.com/MuriloGon/dr-backend
 - https://github.com/MuriloGon/dr-frontend
+
+## Video da aplicação rodando
+
+https://user-images.githubusercontent.com/45644220/141282968-a4334c06-3baf-44fa-b5fe-17de41cda63b.mp4
 
 ## Requisitos Funcionais
 
