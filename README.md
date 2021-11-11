@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/45644220/141282923-fb9b7f02-5c90-4961-
 
 ```bash
 git submodule update --init --recursive
-docker-compose up --build
+docker-compose up -d --build
 
 #para parar e deletar conteiners e imagens criados
 docker-compose down
