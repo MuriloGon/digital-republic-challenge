@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  mongo-db:
+    image: mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    container_name: mongo-db
+
+  backend:
+    build: backend/
+    restart: unless-stopped
+    ports:
+      - "3030:3030"
+    environment:
+      MONGO_HOST: mongo-db
+    links:
+      - mongo-db
+    container_name: backend
+
+  frontend:
+    build: frontend/
+    restart: unless-stopped
+    environment:
+      REACT_APP_PROJ_ENV: remote
+      REACT_APP_BACKEND_HOST: localhost
+    ports:
+      - 3000:3000
+    links:
+      - backend
